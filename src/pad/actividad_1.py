@@ -49,7 +49,7 @@ ingestion = Actividad_1()
 #datos_json = ingestion.leer_api("https://api.github.com/users/octocat")
 #"https://api.nbp.pl/api/exchangerates/tables/{table}/"
 #datos_json = ingestion.leer_api("https://api.nbp.pl/api/exchangerates/tables/B/")
-datos_json = ingestion.leer_api("https://api.pokemontcg.io/v2/cards?q=name:gardevoir")
+datos_json = ingestion.leer_api("https://rickandmortyapi.com/api/location/20")
 print("datos json:",datos_json)
 if ingestion.escribir_json(nombre_archivo="entrega_actividad_1.json",datos=datos_json):
     print("se creo el archivo json")
